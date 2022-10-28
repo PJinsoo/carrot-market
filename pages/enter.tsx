@@ -20,9 +20,9 @@ export default function Enter() {
     <div className="mt-16 px-4 sm:px-24 lg:px-60 xl:px-96">
       {/* 타이틀 및 로고 이미지 */}
       <div className="flex justify-center">
-        <img className="h-14 w-14 rounded-full shadow-lg" src="pome.jpg" />
+        <img className="h-14 w-14 rounded-full shadow-lg mr-2" src="pome.jpg" />
         <h3 className="bg-orange-400 rounded-xl text-3xl font-bold pt-2.5">
-          로고자리
+          로고
         </h3>
       </div>
       {/* 로그인 부분 */}
