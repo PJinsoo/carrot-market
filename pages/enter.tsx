@@ -1,14 +1,10 @@
 import { useState } from "react";
+import { cls } from "../libs/utils";
 
 /**
  * 마켓 로그인 화면
  * 로그인은 이메일과 전화번호, 트위터 계정, 깃허브 계정으로 가능
  */
-
-//className에 삼항연산자 등이 쓰여 길어질 때 사용하는 함수
-function cls(...classnames: string[]) {
-  return classnames.join();
-}
 
 export default function Enter() {
   //로그인 형태 선택에 따른 state
@@ -17,7 +13,7 @@ export default function Enter() {
   const onPhoneClick = () => setMethod("phone");
 
   return (
-    <div className="mt-16 px-4 sm:px-24 lg:px-60 xl:px-96">
+    <div className="mt-16 px-4">
       {/* 타이틀 및 로고 이미지 */}
       <div className="flex justify-center">
         <img className="h-14 w-14 rounded-full shadow-lg mr-2" src="pome.jpg" />

@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Layout from "../../components/layout";
 
 /**
  * 상품 상세보기 페이지
@@ -6,71 +7,73 @@ import type { NextPage } from "next";
 
 const ItemDetail: NextPage = () => {
   return (
-    <div className="px-4 py-10">
-      {/* 상품 사진, 판매자 정보, 상품소개 */}
-      <div className="mb-6">
-        {/* 상품 사진 */}
-        <div className="h-96 bg-slate-300 rounded-md" />
-        {/* 사용자 프로필 파트 */}
-        <div className="flex items-center space-x-3 py-2 border-t border-b cursor-pointer">
-          <div className="w-12 h-12 rounded-full bg-slate-300" />
-          <div>
-            <p className="text-sm font-semibold text-gray-700">판매자 이름</p>
-            <p className="text-xs font-semibold text-gray-500">
-              프로필 정보 &rarr;
-            </p>
-          </div>
-        </div>
-        {/* 상품 이름, 가격, 설명 */}
-        <div className="mt-5">
-          <h1 className="text-3xl font-bold text-gray-900">Galaxy S50</h1>
-          <span className="text-3xl block mt-3 text-gray-900">$140</span>
-          <p className="text-base my-6 text-gray-700">
-            상품 설명이 들어갈 자리
-          </p>
-          {/* 판매자 연락버튼, 좋아요 버튼 */}
-          <div className="flex items-center justify-between space-x-2">
-            <button
-              className="flex-1 py-2 bg-orange-400 text-white font-semibold rounded-md shadow-md hover:bg-orange-500
-                         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
-            >
-              판매자에게 연락하기
-            </button>
-            <button className="p-2 items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500 rounded-md">
-              <svg
-                className="h-6 w-6 "
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      {/* 비슷한 상품 목록 부분 */}
-      <div>
-        <h2 className="text-2xl font-bold text-gray-900">Similar items</h2>
-        <div className="mt-6 grid grid-cols-2 gap-4">
-          {[1, 2, 3, 4, 5, 6].map((_, i) => (
-            <div key={i} className="cursor-pointer">
-              {/* 상품 이미지 */}
-              <div className="h-56 w-full mb-2 bg-slate-300 rounded-md" />
-              <h3 className="text-sm text-gray-700">Galaxy S60</h3>
-              <span className="text-xs font-semibold text-gray-900">$6</span>
+    <Layout canGoBack hasTabBar>
+      <div className="px-4 py-16">
+        {/* 상품 사진, 판매자 정보, 상품소개 */}
+        <div className="mb-6">
+          {/* 상품 사진 */}
+          <div className="h-96 bg-slate-300 rounded-md" />
+          {/* 사용자 프로필 파트 */}
+          <div className="flex items-center space-x-3 py-2 border-t border-b cursor-pointer">
+            <div className="w-12 h-12 rounded-full bg-slate-300" />
+            <div>
+              <p className="text-sm font-semibold text-gray-700">판매자 이름</p>
+              <p className="text-xs font-semibold text-gray-500">
+                프로필 정보 &rarr;
+              </p>
             </div>
-          ))}
+          </div>
+          {/* 상품 이름, 가격, 설명 */}
+          <div className="mt-5">
+            <h1 className="text-3xl font-bold text-gray-900">Galaxy S50</h1>
+            <span className="text-3xl block mt-3 text-gray-900">$140</span>
+            <p className="text-base my-6 text-gray-700">
+              상품 설명이 들어갈 자리
+            </p>
+            {/* 판매자 연락버튼, 좋아요 버튼 */}
+            <div className="flex items-center justify-between space-x-2">
+              <button
+                className="flex-1 py-2 bg-orange-400 text-white font-semibold rounded-md shadow-md hover:bg-orange-500
+                         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+              >
+                판매자에게 연락하기
+              </button>
+              <button className="p-2 items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500 rounded-md">
+                <svg
+                  className="h-6 w-6 "
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* 비슷한 상품 목록 부분 */}
+        <div>
+          <h2 className="text-2xl font-bold text-gray-900">Similar items</h2>
+          <div className="mt-4 grid grid-cols-2 gap-4">
+            {[1, 2, 3, 4, 5, 6].map((_, i) => (
+              <div key={i} className="cursor-pointer">
+                {/* 상품 이미지 */}
+                <div className="h-56 w-full mb-2 bg-slate-300 rounded-md" />
+                <h3 className="text-sm text-gray-700">Galaxy S60</h3>
+                <span className="text-xs font-semibold text-gray-900">$6</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
