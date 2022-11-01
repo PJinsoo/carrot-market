@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "../components/button";
 import { cls } from "../libs/utils";
 
 /**
@@ -92,14 +93,8 @@ export default function Enter() {
               </div>
             ) : null}
           </div>
-          <button
-            className="bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 
-                         border-transparent rounded-md shadow-md font-semibold mt-2
-                         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
-          >
-            {method === "email" ? "로그인 링크 받기" : null}
-            {method === "phone" ? "일회용 비밀번호 받기" : null}
-          </button>
+          {method === "email" ? <Button text="로그인 링크 받기" /> : null}
+          {method === "phone" ? <Button text="일회용 비밀번호 받기" /> : null}
         </form>
         <div className="mt-7">
           {/* relative와 absolute를 조합해 ㅡABCDㅡ 같은 디자인 만들기 */}

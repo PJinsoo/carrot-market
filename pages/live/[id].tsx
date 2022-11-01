@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Layout from "../../components/layout";
+import Message from "../../components/message";
 
 /**
  * 동영상 스트리밍
@@ -9,7 +10,7 @@ import Layout from "../../components/layout";
 const Stream: NextPage = () => {
   return (
     <Layout canGoBack hasTabBar>
-      <div className="py-16 px-4  space-y-4">
+      <div className="py-16 px-4 space-y-4">
         {/* 동영상 출력부 */}
         <div className="w-full rounded-md shadow-sm bg-slate-300 aspect-video" />
         {/* 영상 제목, 가격, 소개 */}
@@ -30,131 +31,16 @@ const Stream: NextPage = () => {
           {/* 채팅창 크기 설정 및 채팅창 스크롤바 생성 */}
           <div className="py-10 pb-16 h-[30vh] overflow-y-scroll  px-4 space-y-4">
             {/* 채팅 */}
-            <div className="flex items-start space-x-2">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>와</p>
-              </div>
-            </div>
-            <div className="flex flex-row-reverse items-start space-x-2 space-x-reverse">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>헉</p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-2">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>와</p>
-              </div>
-            </div>
-            <div className="flex flex-row-reverse items-start space-x-2 space-x-reverse">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>헉</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-2">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>와</p>
-              </div>
-            </div>
-            <div className="flex flex-row-reverse items-start space-x-2 space-x-reverse">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>헉</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-2">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>와</p>
-              </div>
-            </div>
-            <div className="flex flex-row-reverse items-start space-x-2 space-x-reverse">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>헉</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-2">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>와</p>
-              </div>
-            </div>
-            <div className="flex flex-row-reverse items-start space-x-2 space-x-reverse">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>헉</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-2">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>와</p>
-              </div>
-            </div>
-            <div className="flex flex-row-reverse items-start space-x-2 space-x-reverse">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>헉</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-2">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>와</p>
-              </div>
-            </div>
-            <div className="flex flex-row-reverse items-start space-x-2 space-x-reverse">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>헉</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-2">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>와</p>
-              </div>
-            </div>
-            <div className="flex flex-row-reverse items-start space-x-2 space-x-reverse">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>헉</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-2">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>와</p>
-              </div>
-            </div>
-            <div className="flex flex-row-reverse items-start space-x-2 space-x-reverse">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>헉</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-2">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>와</p>
-              </div>
-            </div>
-            <div className="flex flex-row-reverse items-start space-x-2 space-x-reverse">
-              <div className="w-8 h-8 rounded-full bg-slate-400" />
-              <div className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-                <p>헉</p>
-              </div>
-            </div>
+            <Message message="와" profileimg={"/dask.jpg"} />
+            <Message message="헐" profileimg={"/chair.jpg"} />
+            <Message message="헉" profileimg={"/pome.jpg"} reversed />
+            <Message message="헐" profileimg={"/chair.jpg"} />
+            <Message message="헐" profileimg={"/chair.jpg"} />
+            <Message message="헐" profileimg={"/chair.jpg"} />
           </div>
 
           {/* 채팅쓰기 창 */}
-          <div className="fixed py-2 bg-white  bottom-0 inset-x-0">
+          <div className="fixed py-2 bg-white bottom-16 inset-x-0">
             <div className="flex relative max-w-md items-center  w-full mx-auto">
               <input
                 type="text"

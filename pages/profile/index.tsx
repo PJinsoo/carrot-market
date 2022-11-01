@@ -97,7 +97,7 @@ const Profile: NextPage = () => {
         </div>
         {/* 받은 리뷰 */}
         <div className="mt-10 space-y-4">
-          <span className="p-2 bg-gray-300 text-sm rounded-full">
+          <span className="p-2 font-semibold bg-gray-300 text-sm rounded-full">
             받은 리뷰
           </span>
           <div className="border border-gray-600 rounded-md">

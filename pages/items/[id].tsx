@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Button from "../../components/button";
 import Layout from "../../components/layout";
 
 /**
@@ -32,13 +33,8 @@ const ItemDetail: NextPage = () => {
             </p>
             {/* 판매자 연락버튼, 좋아요 버튼 */}
             <div className="flex items-center justify-between space-x-2">
-              <button
-                className="flex-1 py-2 bg-orange-400 text-white font-semibold rounded-md shadow-md hover:bg-orange-500
-                         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
-              >
-                판매자에게 연락하기
-              </button>
-              <button className="p-2 items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500 rounded-md">
+              <Button text="판매자에게 연락하기" />
+              <button className="p-2 items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500 rounded-md mt-2 border">
                 <svg
                   className="h-6 w-6 "
                   xmlns="http://www.w3.org/2000/svg"

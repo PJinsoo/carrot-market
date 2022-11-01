@@ -1,4 +1,6 @@
 import type { NextPage } from "next";
+import Link from "next/link";
+import ChatRoom from "../../components/chatRoom";
 import Layout from "../../components/layout";
 
 /**
@@ -9,20 +11,15 @@ import Layout from "../../components/layout";
 const Chats: NextPage = () => {
   return (
     <Layout title="채팅방" hasTabBar>
-      //divide 형제 요소 사이마다 선을 그어줌
-      <div className="py-10 divide-y-[1px] ">
+      <div className="py-16 divide-y-[1px]">
         {[1, 1, 1, 1, 1, 1, 1].map((_, i) => (
-          <div
+          <ChatRoom
             key={i}
-            className="flex px-4 cursor-pointer py-3 items-center space-x-3"
-          >
-            {/* 프로필 사진 */}
-            <div className="w-12 h-12 rounded-full bg-slate-300" />
-            <div>
-              <p className="text-gray-700 font-semibold">유저명</p>
-              <p className="text-sm  text-gray-500">내일 2시에 뵈요</p>
-            </div>
-          </div>
+            id={i}
+            name="유저명"
+            lastMsg="내일뵈요"
+            profileImg="/pome.jpg"
+          />
         ))}
       </div>
     </Layout>

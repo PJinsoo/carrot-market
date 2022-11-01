@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
+import Button from "../../components/button";
 import Layout from "../../components/layout";
+import Textarea from "../../components/textarea";
 
 /**
  * 판매상품 업로드 페이지
@@ -78,19 +80,10 @@ const Upload: NextPage = () => {
           <label className="mb-1 block text-sm font-semibold text-gray-700">
             판매 상품 설명
           </label>
-          <textarea
-            className="mt-1 w-full shadow-sm rounded-md border-gray-300
-                   focus:ring-orange-500 focus:border-orange-500"
-            rows={4}
-          />
+          <Textarea />
         </div>
-        <button
-          className="mt-2 w-full px-4 py-2 bg-orange-400 hover:bg-orange-500 text-white
-                   border-transparent rounded-md shadow-md font-semibold
-                   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
-        >
-          판매하기
-        </button>
+        {/* 판매하기 버튼 */}
+        <Button text="판매하기" />
       </div>
     </Layout>
   );
