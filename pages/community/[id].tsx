@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Button from "../../components/button";
 import Layout from "../../components/layout";
 
 const CommunityPostDetail: NextPage = () => {
@@ -88,13 +89,7 @@ const CommunityPostDetail: NextPage = () => {
             rows={1}
             placeholder="댓글을 입력해주세요."
           />
-          <button
-            className="mt-2 w-full px-4 py-2 bg-orange-400 hover:bg-orange-500 text-white
-                   border-transparent rounded-md shadow-md font-semibold
-                   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
-          >
-            댓글쓰기
-          </button>
+          <Button text="댓글쓰기" />
         </div>
       </div>
     </Layout>
